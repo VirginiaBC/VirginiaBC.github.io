@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+.game-board {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	grid-template-rows: repeat(3, 200px);
+	grid-gap: 10px;
+	margin: 50px auto;
+	width: 820px;
+}
+
+.block {
+	width: 200px;
+	height: 200px;
+	border: 2px solid brown;
+	border-radius: 50%;
+
+	background-size: cover;
+}
+
+
+.timer {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    padding: 10px 20px;
+    font-size: 15px;
+}

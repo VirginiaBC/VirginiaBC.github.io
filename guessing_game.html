@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="assets/css/style_guessing.css">    
+</head>
+<body>
+    <h1 id="game-title">Word Guessing Game</h1>
+    <div class="timer">
+		<p>Time left</p>
+		<p id="time">60s</p>
+	</div>
+    <p id="score">0 / 10</p>
+    <p id="word"></p>
+
+    <input type="text" id="text-input" maxlength="1" onkeypress="return /[a-z]/i.test(event.key)">
+
+    <button id="start">New Game</button> 
+
+    <p> Guessed Letters: </p>
+    <p id="history"></p>
+
+    <script src="assets/js/guessing_script.js"></script>
+</body>
+</html>
